@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    background-color: #3333337e; 
+    border-bottom: 1px solid #fff;
+    z-index: 100; 
+}
+
+
+.container-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo h1 {
+    color: #fff;
+}
+
+.links li a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+}
+
+.links li {
+    margin: 14px;
+    list-style: none;
+}
+
+.links ul {
+    display: flex;
+}
+
+.links li a:hover {
+    color: orangered;
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 170px;
+}
+
+.content h1 {
+  color: #fff;
+  transform: translateX(-250px);
+  font-size: 45px;
+  margin-bottom: 20px;
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 12ch;
+
+  animation: typing 2s steps(14),
+  blink .5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    
+}
+
+@keyframes blink {
+    50% { border-color: transparent;}
+}
+
+.content h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 25px;
+    color: orangered;
+}
+
+.description {
+    color: #fff;
+}
+
+.description p {
+    font-size: 22px;
+}
+
+.description span {
+    color: orangered;
+}
+
+.btn-cv {
+    background-color: orangered;
+    border: none;
+    padding: 13px 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: border 0.3s, background-color 0.3s;
+    transform: translateX(-280px);
+    margin-top: 50px;
+}
+
+.btn-cv a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-cv button:hover {
+    background-color: #000;
+}
+
+
+.skills {
+    margin-top: 149px;
+    margin-bottom: 140px;
+    border-top: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.skills h1{
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+
+.skills P {
+    color: #fff;
+}
+
+.skills img {
+    width: 100px;
+}
+
+.box1 {
+    display: flex;
+
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: rgba(128, 128, 128, 0.582);
+    border-radius: 20px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.2);
+}
+
+.box p {
+    margin-top: 20px;
+}
+
+.box2 {
+    display: flex;
+}
+
+.proyects{
+    border-top: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.proyects h1 {
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.img img{
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    display: block;
+}
+
+.proyect {
+    padding: 20px;
+    border-radius: 20px;
+    margin: 30px;
+    width: 500px;
+    border: 1px solid #fff;
+    background-color: rgba(128, 128, 128, 0.192);
+}
+
+.title h1 {
+    color: orangered;
+}
+
+.proyec {
+    display: flex;
+}
+
+.logos img{
+    width: 50px;
+    background-color: rgba(128, 128, 128, 0.295);
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.logos {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.description-proyect p{
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-proyect button {
+    background-color: orangered;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+} 
+
+.btn-proyect a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.contact {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin-top: 100px;
+}
+.contact h1{
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+
+.social {
+    padding: 10px;
+    margin-top: 40px;
+    width: 300px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+} 
+
+.social h3 {
+    color: #fff;
+}
+
+.bxl-github {
+   color: #fff;
+   font-size: 50px;
+}
+
+.bxl-linkedin-square {
+    color: #fff;
+    font-size: 50px;
+}
+
+.social:hover h3{
+    color: orangered;
+    cursor: pointer;
+}
+
+footer h1{
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    margin: 20px;
+}
+
+@media screen and (max-width:1150px) {
+    .proyec{
+       display: block;
+    }
+}
+
+@media screen and (max-width:980px){
+    .skills img{
+        width: 50px;
+    }
+
+    .box {
+        width: 150px;
+        height: 150px;
+    }
+
+    .description p{
+        width: 500px;
+    }
+
+    .content h1 {
+        font-size: 30px;
+        transform: translateX(-120px);
+    }
+
+    .btn-cv {
+        transform: translateX(-200px);
+    }
+}
+
+@media screen and (max-width:765px){
+    .box {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .box p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:555px){
+    .description p{
+        width: 300px;
+        font-size: 20px;
+    }
+
+    .btn-cv {
+        transform: translateX(-100px);
+    }
+
+    .content h1 {
+        font-size: 30px;
+        transform: translateX(-40px);
+    }
+}
+
+@media screen and (max-width:470px){
+    .skills img{
+        width: 40px; 
+    }
+
+    .box {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo h1 {
+        font-size: 15px;
+    }
+
+    .links li{
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .proyect {
+        padding: 10px;
+        width: 280px;
+    }
+
+    .proyect img {
+        width: 200px;
+        height: 100px;
+    }
+
+    .title h1 {
+        font-size: 18px;
+    }
+
+    .logos img {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+    }
+
+    .description-proyect p{
+        font-size: 13px;
+    }
+
+    .btn-proyect button{
+        padding: 3px 10px;
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:395px){
+    .skills img{
+        width: 40px; 
+    }
+
+    .box {
+        width: 70px;
+        height: 70px;
+    }
+
+    .box p {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+}
