@@ -21,4 +21,9 @@ function scrollToSection(event) {
   if (targetSection) {
     targetSection.scrollIntoView({ behavior: 'smooth' });
   }
+  
 }
+
+const h2 = document.querySelector(".content h2");
+h2.classList.add("in-view");
+

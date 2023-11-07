@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 1s ease;
 }
 
 body{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.904);
     scroll-behavior: smooth;
 }
 
@@ -19,6 +20,12 @@ body{
     z-index: 100; 
 }
 
+.header a{
+    text-decoration: none;
+    color: #fff;
+    font-family: monospace;
+}
+
 
 .container-header {
     align-items: center;
@@ -27,6 +34,16 @@ body{
     padding: 10px;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.logo img{
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
 .logo h1 {
     color: #fff;
 }
@@ -89,6 +106,14 @@ body{
     margin-bottom: 25px;
     font-size: 25px;
     color: orangered;
+    transform: translateX(100%); 
+    opacity: 0; 
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.content h2.in-view {
+    transform: translateX(0); 
+    opacity: 1; 
 }
 
 .description {
@@ -122,9 +147,10 @@ body{
     text-decoration: none;
 }
 
-.btn-cv button:hover {
+.btn-cv:hover {
     background-color: #000;
 }
+
 
 
 .skills {
@@ -135,6 +161,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
 }
 
 .skills h1{
@@ -183,13 +210,13 @@ body{
     display: flex;
 }
 
+
 .proyects{
     border-top: 1px solid #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
 }
 
 .proyects h1 {
@@ -203,6 +230,7 @@ body{
     height: 200px;
     margin: auto;
     display: block;
+    
 }
 
 .proyect {
@@ -213,6 +241,7 @@ body{
     border: 1px solid #fff;
     background-color: rgba(128, 128, 128, 0.192);
 }
+
 
 .title h1 {
     color: orangered;
@@ -243,10 +272,55 @@ body{
 
 .btn-proyect button {
     background-color: orangered;
+    cursor: pointer;
     border: none;
     padding: 10px 20px;
-    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
 } 
+
+.btn-proyect button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        red,blue, deeppink, blue, 
+        red, blue, deeppink, blue
+    );
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0%{
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
 
 .btn-proyect a {
     color: #fff;
